@@ -9,4 +9,5 @@ import java.util.List;
 @Repository
 public interface AlunoRepository extends CrudRepository<Aluno, Integer> {
     List<Aluno> findByNome(String nome);
+    List<Aluno> findByEmail(String email);
 }
