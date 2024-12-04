@@ -1,4 +1,4 @@
-package com.example.demo.controllers;
+package com.example.demo.controllers.aluno;
 
 import com.example.demo.entities.Aluno;
 import com.example.demo.repositories.AlunoRepository;
@@ -54,5 +54,4 @@ public class TelaExcluirAlunoController {
             mensagemLabel.setText("Nenhum aluno selecionado para exclusão");
         }
     }
-
 }

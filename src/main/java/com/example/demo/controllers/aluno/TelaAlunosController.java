@@ -1,4 +1,4 @@
-package com.example.demo.controllers;
+package com.example.demo.controllers.aluno;
 
 import com.example.demo.repositories.AlunoRepository;
 import javafx.fxml.FXML;

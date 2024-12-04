@@ -1,4 +1,4 @@
-package com.example.demo.controllers;
+package com.example.demo.controllers.aluno;
 
 import com.example.demo.entities.Aluno;
 import com.example.demo.repositories.AlunoRepository;
@@ -17,6 +17,12 @@ public class TelaNovoAlunoController {
     private TextField emailTextField;
 
     @FXML
+    private TextField enderecoTextField;
+
+    @FXML
+    private TextField cpfTextField;
+
+    @FXML
     private Label mensagemLabel;
 
     private AlunoRepository alunoRepository;
@@ -30,10 +36,14 @@ public class TelaNovoAlunoController {
         Aluno aluno = new Aluno();
         aluno.setNome(nomeTextField.getText());
         aluno.setEmail(emailTextField.getText());
+        aluno.setEndereco(enderecoTextField.getText());
+        aluno.setCpf(cpfTextField.getText());
         alunoRepository.save(aluno);
 
         nomeTextField.clear();
         emailTextField.clear();
+        enderecoTextField.clear();
+        cpfTextField.clear();
         mensagemLabel.setText("Aluno salvo com sucesso!");
     }
 
