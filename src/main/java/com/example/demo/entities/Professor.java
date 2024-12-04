@@ -7,7 +7,7 @@ import jakarta.persistence.Id;
 import lombok.*;
 
 @Entity @Getter @Setter @AllArgsConstructor @NoArgsConstructor @ToString
-public class Aluno {
+public class Professor {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
